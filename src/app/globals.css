@@ -1,26 +1,44 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 243, 244, 246;
+  --background-rgb: 17, 24, 39;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-primary text-text-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .section-padding {
+    @apply py-16 px-4 lg:px-8;
+  }
+  
+  .heading-primary {
+    @apply font-poppins font-bold text-4xl md:text-5xl text-text-primary;
+  }
+  
+  .heading-secondary {
+    @apply font-poppins font-semibold text-2xl md:text-3xl text-text-primary;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-neutral-light hover:bg-accent hover:text-primary text-text-primary px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-accent text-primary px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 bg-neutral border border-neutral-light rounded-lg focus:outline-none focus:border-accent text-text-primary placeholder:text-text-secondary;
+  }
 }

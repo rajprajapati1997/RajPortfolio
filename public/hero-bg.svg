@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#111827"/>
+  <!-- Bug Icon -->
+  <g opacity="0.15">
+    <ellipse cx="300" cy="350" rx="120" ry="120" fill="#00E6B8"/>
+    <path d="M300 260v180M220 350h160" stroke="#FFB300" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="300" cy="350" rx="60" ry="80" fill="#232336"/>
+    <ellipse cx="300" cy="340" rx="12" ry="18" fill="#FFB300"/>
+    <ellipse cx="300" cy="370" rx="12" ry="18" fill="#FFB300"/>
+  </g>
+  <!-- Gear Icon -->
+  <g opacity="0.18">
+    <circle cx="900" cy="200" r="60" fill="#00E6B8"/>
+    <g stroke="#FFB300" stroke-width="7">
+      <circle cx="900" cy="200" r="35" fill="#232336"/>
+      <path d="M900 140v20M900 240v20M840 200h20M940 200h20M870 170l14 14M930 230l14 14M870 230l14-14M930 170l14-14"/>
+    </g>
+  </g>
+  <!-- Code Symbol -->
+  <g opacity="0.14">
+    <rect x="650" y="480" width="180" height="80" rx="20" fill="#232336"/>
+    <text x="670" y="535" font-family="monospace" font-size="56" fill="#00E6B8">{'<>'}</text>
+  </g>
+</svg>
